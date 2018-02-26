@@ -1,5 +1,5 @@
 export const CONST = {
-  constante: 'lol'
+  API_URL: process.env.NODE_ENV === 'production' ? '/rest' : 'http://zs.emagasin.local.gendarmerie.fr/app_dev.php/rest'
 }
 
 const ApplicationConst = {
