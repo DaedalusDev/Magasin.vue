@@ -1,3 +1,20 @@
 @import './quasar.variables'
 @import '~quasar-styl'
 // @import '~quasar-addon-styl'
+
+
+.full-height-table
+  /* max height is important */
+  .q-table__middle
+    max-height calc(100vh - 180px)
+
+  .q-table__top,
+  .q-table__bottom,
+  thead tr:first-child th /* bg color is important for th; just specify one */
+    background-color lightgrey
+
+  thead tr:first-child th
+    position sticky
+    top 0
+    opacity 1
+    z-index 1
