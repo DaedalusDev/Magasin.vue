@@ -1,6 +1,7 @@
 import Inventaire from './views/Inventaire'
 import Locaux from './views/Locaux'
-import Local from './views/Local'
+import Local from './views/Locaux/Local'
+import Export from '@/views/Locaux/Export'
 
 export default [
   {
@@ -22,9 +23,16 @@ export default [
     },
     children: [
       {
-        path: '/local/{id}',
+        path: '/local/:id',
         name: 'local',
-        component: Local
+        component: Local,
+        props: true
+      },
+      {
+        path: '/local/export',
+        name: 'localExport',
+        component: Export,
+        props: true
       }
     ]
   },
@@ -38,9 +46,16 @@ export default [
     },
     children: [
       {
-        path: '/personnel/{id}',
+        path: '/personnel/:id',
         name: 'personnel',
-        component: Local
+        component: Local,
+        props: true
+      },
+      {
+        path: '/personnel/export',
+        name: 'personnelExport',
+        component: Export,
+        props: true
       }
     ]
   }

@@ -3,6 +3,7 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 import './quasarConfigure'
+import './core'
 
 Vue.config.productionTip = false
 

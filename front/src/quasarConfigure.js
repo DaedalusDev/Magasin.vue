@@ -35,6 +35,12 @@ import {
   QTh,
   QTr,
   QTd,
+  QTabs,
+  QTabPanels,
+  QTabPanel,
+  QRouteTab,
+  QSeparator,
+  QExpansionItem,
   // Plugins
   Dialog,
   Notify
@@ -70,7 +76,13 @@ Vue.use(Quasar, {
     QTable,
     QTh,
     QTr,
-    QTd
+    QTd,
+    QTabs,
+    QRouteTab,
+    QTabPanels,
+    QTabPanel,
+    QSeparator,
+    QExpansionItem
   },
   directives: {},
   plugins: {
